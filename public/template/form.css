@@ -53,8 +53,8 @@
 	background: #DFDFDF;
 }
 .dark-matter select {
-    background: #DFDFDF image-url('down-arrow.png') no-repeat right;
-    background: #DFDFDF image-url('down-arrow.png') no-repeat right;
+    background: #DFDFDF url('down-arrow.png') no-repeat right;
+    background: #DFDFDF url('down-arrow.png') no-repeat right;
     appearance:none;
     -webkit-appearance:none; 
     -moz-appearance: none;
