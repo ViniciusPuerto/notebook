@@ -7,7 +7,7 @@ namespace :utils do
               name:Faker::Name.name ,
               email:Faker::Internet.email,
               kind: Kind.all.sample,
-              rmk:Faker::Lorem.paragraph([1,2,3,4,5].sample)
+              rmk: LeroleroGenerator.paragraph([1,2,3].sample)
           )
         end
       Contact.all.each do |i| 

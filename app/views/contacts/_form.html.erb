@@ -31,18 +31,26 @@
   </div>
 
   
+       <%=  f.fields_for :phnes do  |phones_fields|%>
+          <div class="field">
+            <%= phones_fields.label :phone %>
+            <%= phones_fields.text_field :phone %>
+          <div>
+        <% end %> 
+
+
       <%=  f.fields_for :address do  |address_fields|%>
       <div class="field">
-       <%= f.label :Street %>
+       <%= address_fields.label :Street %>
         <%= address_fields.text_field :street%>
        <div>
        <div class="field">
-        <%= f.label :City %>
+        <%= address_fields.label :City %>
         <%= address_fields.text_field :city  %>
         <div>
         <div class="field">
-        <%= f.label :State %>
-        <%= address_fields.text_field :state%>
+        <%= address_fields.label :State %>
+        <%=  address_fields.select :state, options_for_states(@contact.address.state) %>
         <div>
         <% end %>
  
